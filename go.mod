@@ -1,4 +1,4 @@
-module github.com/DataDog/dd-trace-go/v2
+module github.com/DataDog/dd-trace-go/v1
 
 go 1.23.0
 
@@ -11,6 +11,7 @@ require (
 	github.com/DataDog/datadog-agent/pkg/remoteconfig/state v0.64.0-rc.1
 	github.com/DataDog/datadog-agent/pkg/trace v0.64.0-rc.1
 	github.com/DataDog/datadog-go/v5 v5.6.0
+	github.com/DataDog/dd-trace-go/v2 v2.1.0-dev.1
 	github.com/DataDog/go-libddwaf/v3 v3.5.4
 	github.com/DataDog/go-runtime-metrics-internal v0.0.4-0.20241206090539-a14610dc22b6
 	github.com/DataDog/gostackparse v0.7.0
