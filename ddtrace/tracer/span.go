@@ -455,8 +455,8 @@ func takeStacktrace(n, skip uint) string {
 	var builder strings.Builder
 	pcs := make([]uintptr, n)
 
-	// +2 to exclude runtime.Callers and takeStacktrace
-	numFrames := runtime.Callers(2+int(skip), pcs)
+	// +3 to exclude runtime.Callers, takeStacktrace and setTagError itself
+	numFrames := runtime.Callers(3+int(skip), pcs)
 	if numFrames == 0 {
 		return ""
 	}
